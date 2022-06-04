@@ -1,5 +1,4 @@
 header p {
-    font-family: 'Raleway';
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -13,6 +12,12 @@ header p {
 
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+footer {
+    font-family: 'Raleway', sans-serif;
 }
 
 span {
@@ -35,6 +40,7 @@ img {
 }
 
 h1 {
+    font-weight: 900;
     font-size: 26px;
     line-height: 42px;
     text-transform: uppercase;
@@ -42,4 +48,49 @@ h1 {
     text-align: center;
 }
 
-/* comment */
+h2,
+h3 {
+    font-weight: 700;
+    color: #212121;
+}
+
+h2 {
+    margin: 25px 0 4px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+h3 {
+    margin: 20px 24px 4px;
+    font-size: 18px;
+    line-height: 36px
+}
+
+p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #757575;
+    margin: 0 24px 20px;
+}
+
+.second-section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+article {
+    border: 1px solid #EEEEEE;
+}
+
+article:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+article:hover h3 {
+    color: #2196F3;
+}
+
+article:not(:last-child) {
+    margin-bottom: 30px;
+}
