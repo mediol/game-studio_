@@ -37,6 +37,19 @@ img {
     background-size: cover;
     padding-top: 158px;
     box-sizing: border-box;
+    position: relative;
+}
+
+.first-section::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(47, 48, 58, 0.4);
 }
 
 h1 {
@@ -46,10 +59,12 @@ h1 {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
-h2,
-h3 {
+main h2,
+main h3 {
     font-weight: 700;
     color: #212121;
 }
@@ -77,6 +92,15 @@ p {
 .second-section {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 24px;
+}
+
+hr {
+    background: #2196F3;
+    margin: 0 auto 31px;
+    width: 100px;
+    height: 2px;
+    border: none;
 }
 
 article {
@@ -93,4 +117,35 @@ article:hover h3 {
 
 article:not(:last-child) {
     margin-bottom: 30px;
+}
+
+footer {
+    padding: 30px;
+    background: #2F303A;
+    color: #fff;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 13px;
+}
+
+footer address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+footer a {
+    display: block;
+    margin: 8px 0 0;
+    color: rgba(255, 255, 255, .6);
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 24px;
 }
